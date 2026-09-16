@@ -53,6 +53,7 @@ void wanna_add() {
 }
 
 void see() {
+    cout << endl;
     
      for (int i = 0; i < g.size(); i++) {
          cout << g[i] << endl;
