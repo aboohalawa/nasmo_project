@@ -11,6 +11,8 @@ vector<string> g = {
     "apple"
 };
 
+bool tal;
+
 
 void add();
 void wanna_add();
@@ -19,6 +21,8 @@ void see();
 int main() {
     cin.tie(0);
     cin.sync_with_stdio(0);
+
+    tal = true;
 
     see();
     wanna_add();
@@ -40,7 +44,11 @@ void add() {
 
 void wanna_add() {
     cout << endl << "wanna add or wanna see the array" << endl;
-    cout << "answer add if you wanna add or see if you wanna see the array" << endl;
+    if (tal) {
+         cout << "answer add if you wanna add or see if you wanna see the array" << endl;
+         tal = false;
+    }
+   
     string v;
     cin >> v;
     if (v=="add") {
