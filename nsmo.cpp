@@ -19,13 +19,12 @@ void wanna_add();
 void see();
 
 int main() {
-    cin.tie(0);
-    cin.sync_with_stdio(0);
+   // cin.tie(0);
+    //cin.sync_with_stdio(0);
 
     tal = true;
 
     see();
-    wanna_add();
 
     
 
@@ -45,7 +44,9 @@ void add() {
 void wanna_add() {
     cout << endl << "wanna add or wanna see the array" << endl;
     if (tal) {
-         cout << "answer add if you wanna add or see if you wanna see the array" << endl;
+         cout << endl << "answer add if you wanna add " << endl 
+         << "or see if you wanna see the array" << endl 
+         << "type anything if you wanna exit" << endl;
          tal = false;
     }
    
@@ -56,6 +57,9 @@ void wanna_add() {
     }
     else if (v=="see") {
         see();
+    }
+    else {
+        return;
     }
     
 }
