@@ -20,12 +20,18 @@ void wanna_add();
 void see();
 
 int main() {
+<<<<<<< HEAD
     cin.tie(0);
     cin.sync_with_stdio(0);
     onetime = true;
+=======
+   // cin.tie(0);
+    //cin.sync_with_stdio(0);
+
+    tal = true;
+>>>>>>> add_exit
 
     see();
-    wanna_add();
 
     
 
@@ -44,9 +50,17 @@ void add() {
 
 void wanna_add() {
     cout << endl << "wanna add or wanna see the array" << endl;
+<<<<<<< HEAD
     if (onetime) {
          cout << "answer add if you wanna add or see if you wanna see the array" << endl;
          onetime = false;
+=======
+    if (tal) {
+         cout << endl << "answer add if you wanna add " << endl 
+         << "or see if you wanna see the array" << endl 
+         << "type anything if you wanna exit" << endl;
+         tal = false;
+>>>>>>> add_exit
     }
    
     string v;
@@ -56,6 +70,9 @@ void wanna_add() {
     }
     else if (v=="see") {
         see();
+    }
+    else {
+        return;
     }
     
 }
